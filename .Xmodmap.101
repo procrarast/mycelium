@@ -1,0 +1,18 @@
+! My config for standard 101 key layouts
+!
+!  tab  q  w  e
+! [CTRL] a  s  d
+!  shift  z  x  c
+! [ALT]  [CAPS]
+!
+clear lock
+clear control
+clear mod1
+
+keycode 66 = Control_L
+keycode 37 = Alt_L
+keycode 64 = Caps_Lock
+
+add control = Control_L
+add mod1 = Alt_L
+add lock = Caps_Lock

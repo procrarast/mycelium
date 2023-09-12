@@ -1,0 +1,45 @@
+! pc31754's config for the NMB PC-122 keyboard
+! [BRACKETS] indicate a change from default
+! The defaults on this thing are ridiculous
+
+! ##### Alphanumeric #####
+
+! [E] 1  2  3  4  5  6  7  8  9  0  -  =  <---
+!  tab  q  w  e  r  t  y  u  i  o  p  [  ] ent
+! [CTRL] a  s  d  f  g  h  j  k  l  ;  '  \ er
+!  sh [~] z  x  c  v  b  n  m  ,  .  /   shift
+! [ALT]  [CAPS]       space        alt    ctrl
+ 
+clear lock
+clear control
+clear mod1
+
+keycode 66 	= Control_L
+keycode 37 	= Alt_L
+keycode 64 	= Caps_Lock
+keycode 94 	= grave asciitilde
+keycode 49 	= Escape
+
+add control 	= Control_L
+add mod1 	= Alt_L
+add lock 	= Caps_Lock
+
+! ##### Nav + Numpad #####
+! Note: Arrows are intentionally annoying
+
+! [I][H][U] [N][/][*][-]
+! [D][E][D]  7  8  9 [+]
+!     ^      4  5  6 [=]
+!  <     >   1  2  3  |
+!     V        0   . </
+
+clear mod2
+
+keycode 9	= Num_Lock
+keycode 77	= KP_Divide
+keycode 78	= KP_Multiply
+keycode 63 	= KP_Minus
+keycode 82	= KP_Plus
+keycode 86 	= KP_Equals
+
+add mod3 = Num_Lock
