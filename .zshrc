@@ -24,5 +24,3 @@ alias grep='grep --color=auto'
 
 PS1="[${BLUE}%n${RESET}@%m] ${GRAY}%~${RESET} $ "
 
-source /opt/toolchains/dc/kos/environ.sh
-
