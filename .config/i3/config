@@ -1,12 +1,13 @@
 
-font pango:Source Code Pro Regular 12
+font pango:Go Mono Nerd Font 12
 
 # execs
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id picom  --config ~/.config/picom/picom.conf
-exec --no-startup-id feh --bg-fill ~/Downloads/1691992639811237.jpg
+#exec --no-startup-id feh --bg-fill ~/Downloads/1693789825348093.jpg
+exec --no-startup-id autokey-gtk
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -20,6 +21,12 @@ set $down j
 
 set $left h
 set $right l
+
+# space between adjacent windows
+gaps inner 12
+smart_gaps off
+
+for_window [class=".*"] border pixel 2
 
 # use Mouse+Mod1 to drag floating windows to their wanted position 
 floating_modifier Mod1
@@ -45,23 +52,14 @@ bindsym Mod1+$down focus down
 bindsym Mod1+$up focus up
 bindsym Mod1+$right focus right
 
-# alternatively, you can use the cursor keys:
-bindsym Mod1+Left focus left
-bindsym Mod1+Down focus down
-bindsym Mod1+Up focus up
-bindsym Mod1+Right focus right
+# kill the focused window
+bindsym Mod1+q kill
 
 # move focused window
 bindsym Mod1+Shift+$left move left
 bindsym Mod1+Shift+$down move down
 bindsym Mod1+Shift+$up move up
 bindsym Mod1+Shift+$right move right
-
-# alternatively, you can use the cursor keys:
-bindsym Mod1+Shift+Left move left
-bindsym Mod1+Shift+Down move down
-bindsym Mod1+Shift+Up move up
-bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
 bindsym Mod1+b split h

@@ -1,0 +1,18 @@
+! pc31754's config for the OmniKey Ultra T keyboard
+! [BRACKETS] indicate a change from default
+
+! ##### Alphanumeric #####
+
+!  [E] 1  2  3  4  5  6  7  8  9  0  -  =  <--
+!  tab  q  w  e  r  t  y  u  i  o  p  [  ]  en
+!  ctrl  a  s  d  f  g  h  j  k  l  ;  '   ter
+!  shift  z  x  c  v  b  n  m  ,  .  /  shft \ 
+!  alt [~] caps      space      alt  [$]  ctrl
+ 
+keycode 94 	= grave asciitilde
+keycode 49 	= Escape
+
+! TODO: Can I set SF keys to other keycodes?
+! Also, figure out what the * key is supposed to be
+! I won't prioritize it because it's hard to find
+! with my muscle memory

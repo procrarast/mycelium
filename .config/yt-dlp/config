@@ -1,0 +1,6 @@
+--cookies-from-browser firefox
+
+-u iloveflag123
+-p __JaZzY!
+
+-o ~/Videos/youtube/%(title)s.%(ext)s
